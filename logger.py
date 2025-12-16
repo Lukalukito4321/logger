@@ -5,8 +5,10 @@ from dotenv import load_dotenv
 
 
 
-# Load .env from same folder as this file
-load_dotenv(Path(__file__).with_name(".env"))
+from dotenv import load_dotenv
+
+load_dotenv()  # ლოკალურად წაიკითხავს .env-ს, Railway-ზე უბრალოდ გამოტოვებს
+
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 LOG_CHANNEL_ID = os.getenv("LOG_CHANNEL_ID", "0")
