@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-import 
+
 from discord.ext import commands
 
 # Load .env from same folder as this file
