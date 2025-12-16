@@ -3,7 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
-from discord.ext import commands
+ import commands
 
 # Load .env from same folder as this file
 load_dotenv(Path(__file__).with_name(".env"))
